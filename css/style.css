@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,6 +9,97 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+section {
+  background-color: #00669f;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  color: #ffffff;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  height: 60px;
+  font-size: 0.8rem;
+  background-color: rgba(0, 102, 159, 1);
+}
+
+.form-add-character {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.form-add-character label {
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-add-character input[type="text"],
+input[type="date"],
+textarea,
+select {
+  padding: 0.8rem;
+  margin: 0 0 0.5rem 0;
+  border: 0px;
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form-add-character input::file-selector-button {
+  font-weight: bold;
+  color: rgb(47, 94, 96);
+  padding: 0.5em;
+  border: 0;
+  border-radius: 5px;
+}
+
+.form-add-character fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.form-add-character legend {
+  margin-bottom: 0.3rem;
+}
+
+.option {
+  display: flex;
+  padding: 0.5rem 0rem 0.2rem 0rem;
+}
+
+.option input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
 }
 
 .top-bar {
@@ -46,6 +138,7 @@ body {
   width: 100%;
   height: 40px;
   background-color: #001d2d;
+  box-shadow: 0px 4px 5px #9f9f9f;
 }
 
 .navbar ul {
@@ -60,4 +153,47 @@ body {
 .navbar ul li a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.form-add-character {
+  display: flex;
+  width: 70vw;
+  max-width: 600px;
+  min-width: 400px;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem;
+}
+
+.btn-send {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.btn-send button {
+  color: #ffffff;
+  padding: 1rem;
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #1cd1b0;
+  border: 0;
+  border-radius: 15px;
+}
+
+.btn-send button:hover {
+  cursor: pointer;
+  background-color: #00ae8e;
+}
+
+.separator {
+  height: 1px;
+  background-color: #cccccc;
 }

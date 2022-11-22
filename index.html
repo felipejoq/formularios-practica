@@ -28,7 +28,74 @@
       <section>
         <h2>Añadí tu súper!</h2>
         <p>Agregá tu personaje favorito completando las opciones.</p>
-        <form action="./ruta/imaginaria.php" method="post">Inputs</form>
+        <form class="form-add-character" action="#" method="post">
+          <div class="col">
+            <label for="name">* Nombre</label>
+            <input type="text" name="name" id="name" />
+            <label for="date">Fecha</label>
+            <input type="date" name="date" id="date" />
+            <textarea
+              name="description"
+              name="desc"
+              id="desc"
+              cols="30"
+              rows="10"
+              placeholder="Descripción..."
+            ></textarea>
+          </div>
+          <div class="col">
+            <label for="species">* Especie</label>
+            <select name="species">
+              <option value="" disabled selected hidden>Especie...</option>
+              <option value="value1">Especie #1</option>
+              <option value="value2">Especie #2</option>
+              <option value="value3">Especie #3</option>
+            </select>
+            <label for="photo">Agregar Foto</label>
+            <input type="file" name="photo" id="photo" />
+            <fieldset>
+              <legend>Poderes</legend>
+              <div class="option">
+                <input type="checkbox" name="powers" value="fly" />Volar
+              </div>
+              <div class="option">
+                <input
+                  type="checkbox"
+                  name="powers"
+                  value="intelligence"
+                />Superinteligencia
+              </div>
+              <div class="option">
+                <input
+                  type="checkbox"
+                  name="powers"
+                  value="eyeLaserBeam"
+                />Vista de rayo láser
+              </div>
+              <div class="option">
+                <input
+                  type="checkbox"
+                  name="powers"
+                  value="millonaire"
+                />Billetera gorda
+              </div>
+            </fieldset>
+            <div class="separator"></div>
+            <fieldset>
+              <legend>Tipo de personaje</legend>
+              <div class="option">
+                <input type="radio" name="type" value="hero" />Héroe / Heroina
+              </div>
+              <div class="option">
+                <input type="radio" name="type" value="villain" />Villano /
+                Villana
+              </div>
+            </fieldset>
+          </div>
+          <div class="btn-send">
+            <button type="submit" name="send" id="send">Añadir</button>
+          </div>
+        </form>
       </section>
     </main>
 
